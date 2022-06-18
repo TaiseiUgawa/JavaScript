@@ -3,28 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="https://kit.fontawesome.com/4d60fe16e7.js" crossorigin="anonymous"></script>
+  <title>Carousel</title>
 </head>
 <body>
 
-  <section class="tab">
-    <ul class="tab__label">
-      <li><a href="#" class="active" data-id="tab__info">サイトの情報</a></li>
-      <li><a href="#" data-id="tab__product">商品情報</a></li>
-      <li><a href="#" data-id="tab__contact">お問い合わせ</a></li>
-    </ul>
+  <section id="carousel" class="carousel">
+    <div class="carousel__main"><img id="carousel__main"></div>
+    <div id="carousel__prev" class="carousel__prev"><i class="fas fa-angle-left fa-5x"></i></div>
+    <div id="carousel__next" class="carousel__next"><i class="fas fa-angle-right fa-5x"></i></div>
+    <ul class="carousel__thumbnails"></ul>
+  </section>
 
-    <section class="tab__content active" id="tab__info">
-      サイトの情報。サイトの情報。
-    </section>
-    <section class="tab__content" id="tab__product">
-      商品情報。商品情報。
-    </section>
-    <section class="tab__content" id="tab__contact">
-      お問い合わせ。お問い合わせ。
-    </section>
-  </section>  
+
 
   <script src="main.js"></script>
   
