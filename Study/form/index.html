@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <style>
+        .w300{
+            width:300px;
+        }
+    </style>
 </head>
 <body>
     <form action="" id="form_test1">
@@ -15,6 +20,10 @@
         <label for="gender_male">男性</label>
         <input id="gender_male" type="radio" name="gender">
         <input type="radio" name="gender">女性
+        <!-- 画像操作部分 -->
+        <input type="file" name="image_file">
+        <br>
+        <img src="" name="preview" class="w300">
 
         <select name="" id=""></select>
         <textarea name="" id="" cols="30" rows="10"></textarea>
@@ -26,5 +35,6 @@
     </form>
 
     <script src="main.js"></script>
+    <script src="fileUpload.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+'use strict'
+
 // const formtest1 = document.getElementById('formtest1');
 // console.log(formtest1);
 
