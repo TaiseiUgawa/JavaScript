@@ -7,16 +7,16 @@
 
 // console.log(formData);
 
-// for(let data of formData.entries()){
-//     console.log(`${data[0]}: ${data[1]}`);
-// };
+
 
 document.getElementById('button')
 .addEventListener('click', () => {
-    console.log('hello');
     const postForm = document.forms.post_form;
     const formData = new FormData(postForm); 
-    console.log(formData);
+    
+    for(let data of formData.entries()){
+        console.log(`${data[0]}: ${data[1]}`);
+    };
 
     const url = 'https://coinbaby8.com/udemy_js_api/api/udemy_js';
 
@@ -33,8 +33,6 @@ document.getElementById('button')
         } else {
             return new Error();
         }
-    })
-    .then( text => console.log(text))
+    }).then( text => console.log(text))
     .catch( e => console.error(e));
-
 });
