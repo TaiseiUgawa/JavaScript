@@ -10,13 +10,13 @@ export const Router = () => {
       <Switch>
         <Route exact path="/">
           <DefaultLayout>
-          <Top />
+            <Top />
           </DefaultLayout>
         </Route>
 
         <Route path="/users">
           <HeaderOnly>
-          <Users />
+            <Users />
           </HeaderOnly>
         </Route>
       </Switch>
